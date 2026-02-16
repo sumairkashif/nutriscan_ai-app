@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
-  static const Color primary = Color(0xFF2ECC71); // Emerald Green
+  static const Color primary = Color(0xFF178E49); // Emerald Green
   static const Color secondary = Color(0xFF04381B); // Darker Green
   static const Color background = Color(0xFF121212); // True Black/Dark Grey
   static const Color surface = Color(0xFF1E1E1E); // Surface/Cards

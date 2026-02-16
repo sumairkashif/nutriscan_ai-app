@@ -71,7 +71,7 @@ class _ProcessingScreenState extends ConsumerState<ProcessingScreen> with Single
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0D1F12), // Deep dark green bg from image
+      backgroundColor: const Color(0xFF020202), // Deep dark green bg from image
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),

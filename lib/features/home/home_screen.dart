@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "NutriScan User", 
+                            "NutriScan AI User",
                             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: AppColors.onBackground,
@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                   
                   // Summary Card with Organic Shape
                   AnimationConfiguration.synchronized(
-                    duration: const Duration(milliseconds: 800),
+                    duration: const Duration(milliseconds: 900),
                     child: SlideAnimation(
                       verticalOffset: 50.0,
                       child: FadeInAnimation(
@@ -119,7 +119,7 @@ class HomeScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    "Daily Intake",
+                                    "Required Daily Intake acc \n to your health",
                                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600,
