@@ -17,6 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Output...
 
-![Outout-1](assets/images/nutriscan-1.png)
-![Output-2](assets/images/nutriscan-1.png)
-![n8n-Workflow](assets/images/nutriscan-1.png)
+![Outout-1](assets/images/nutriscan_1.png)
+![Output-2](assets/images/nutriscan_2.png)
+![n8n-Workflow](assets/images/nutriscan_3.png)
