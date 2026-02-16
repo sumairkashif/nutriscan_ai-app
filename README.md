@@ -1,4 +1,4 @@
-# nutri_scan_ai
+# nutriscan_ai
 
 A new Flutter project.
 
