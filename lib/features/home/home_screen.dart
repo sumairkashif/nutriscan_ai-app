@@ -9,13 +9,28 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     // Mock Data
-    final List<NutritionData> recommendedFoods = [
-      NutritionData(mealName: "Avocado Toast", calories: 250, protein: 6),
-      NutritionData(mealName: "Grilled Salmon", calories: 450, protein: 35),
-      NutritionData(mealName: "Greek Yogurt Bowl", calories: 180, protein: 12),
-      NutritionData(mealName: "Quinoa Salad", calories: 320, protein: 8),
-      NutritionData(mealName: "Chicken Breast", calories: 165, protein: 31),
+     // Mock Data with Icons
+    final List<Map<String, dynamic>> recommendedFoods = [
+      {
+        "data": NutritionData(mealName: "Avocado Toast", calories: 250, protein: 6),
+        "icon": Icons.breakfast_dining,
+      },
+      {
+        "data": NutritionData(mealName: "Grilled Salmon", calories: 450, protein: 35),
+        "icon": Icons.set_meal,
+      },
+      {
+        "data": NutritionData(mealName: "Greek Yogurt Bowl", calories: 180, protein: 12),
+        "icon": Icons.icecream, 
+      },
+      {
+        "data": NutritionData(mealName: "Quinoa Salad", calories: 320, protein: 8),
+        "icon": Icons.rice_bowl,
+      },
+      {
+        "data": NutritionData(mealName: "Chicken Breast", calories: 165, protein: 31),
+        "icon": Icons.dinner_dining,
+      },
     ];
 
     return Scaffold(
@@ -162,6 +177,9 @@ class HomeScreen extends StatelessWidget {
                         itemCount: recommendedFoods.length,
                         physics: const BouncingScrollPhysics(),
                         itemBuilder: (BuildContext context, int index) {
+                          final food = recommendedFoods[index]["data"] as NutritionData;
+                          final icon = recommendedFoods[index]["icon"] as IconData;
+
                           return AnimationConfiguration.staggeredList(
                             position: index,
                             duration: const Duration(milliseconds: 500),
@@ -187,7 +205,7 @@ class HomeScreen extends StatelessWidget {
                                               )
                                             ]
                                           ),
-                                          child: Icon(Icons.fastfood, color: AppColors.primary, size: 30),
+                                          child: Icon(icon, color: AppColors.primary, size: 30),
                                         ),
                                         const SizedBox(width: 20),
                                         Expanded(
@@ -195,7 +213,7 @@ class HomeScreen extends StatelessWidget {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                recommendedFoods[index].mealName,
+                                                food.mealName,
                                                 style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 16,
@@ -207,14 +225,14 @@ class HomeScreen extends StatelessWidget {
                                                   Icon(Icons.local_fire_department, size: 14, color: Colors.orange),
                                                   const SizedBox(width: 4),
                                                   Text(
-                                                    "${recommendedFoods[index].calories.toInt()} kcal",
+                                                    "${food.calories.toInt()} kcal",
                                                     style: const TextStyle(color: Colors.grey, fontSize: 13),
                                                   ),
                                                   const SizedBox(width: 15),
                                                   Icon(Icons.fitness_center, size: 14, color: AppColors.primary),
                                                   const SizedBox(width: 4),
                                                   Text(
-                                                    "${recommendedFoods[index].protein.toInt()}g",
+                                                    "${food.protein.toInt()}g",
                                                     style: const TextStyle(color: Colors.grey, fontSize: 13),
                                                   ),
                                                 ],
