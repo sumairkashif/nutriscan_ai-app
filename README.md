@@ -1,4 +1,4 @@
-# nutri_scan_ai
+# nutriscan_ai
 
 A new Flutter project.
 
@@ -15,8 +15,16 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+<<<<<<< HEAD
 ## Output Result...
 
 ![Outout-1](assets/images/nutriscan_1.png)
 ![Output-2](assets/images/nutriscan_2.png)
 ![n8n-Workflow](assets/images/nutriscan_3.png)
+=======
+## Output...
+
+![Outout-1](assets/images/nutriscan_1.png)
+![Output-2](assets/images/nutriscan_2.png)
+![n8n-Workflow](assets/images/nutriscan_3.png)
+>>>>>>> defe3cd54fcabde6fdf5eb1b310b0b5cd744991e
