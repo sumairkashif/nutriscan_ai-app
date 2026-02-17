@@ -15,7 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Output...
+## Output Result...
 
 ![Outout-1](assets/images/nutriscan_1.png)
 ![Output-2](assets/images/nutriscan_2.png)
