@@ -61,9 +61,6 @@ class HistoryScreen extends ConsumerWidget {
                           ),
                           onDismissed: (direction) {
                              ref.read(storageServiceProvider).deleteHistoryItem(item.id);
-                             // Invalidate provider to refresh list
-                             // Ideally we should use a Stream or StateNotifier for cleaner updates, 
-                             // but ref.refresh works for this simple case.
                              ref.refresh(historyProvider);
                           },
                           child: GlassCard(
@@ -138,7 +135,7 @@ class HistoryScreen extends ConsumerWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.surface,
-        title: const Text("Edit Entry"),
+        title: const Text("Edit Data"),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
