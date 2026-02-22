@@ -9,7 +9,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     // Mock Data with Icons
     final List<Map<String, dynamic>> recommendedFoods = [
       {
         "data": NutritionData(mealName: "Avocado Toast", calories: 250, protein: 6),
@@ -94,8 +93,6 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 30),
-                  
-                  // Summary Card with Organic Shape
                   AnimationConfiguration.synchronized(
                     duration: const Duration(milliseconds: 900),
                     child: SlideAnimation(

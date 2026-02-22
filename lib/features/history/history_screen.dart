@@ -8,7 +8,6 @@ import '../../data/models/history_item.dart';
 import '../../data/models/nutrition_data.dart';
 import '../../data/services/storage_service.dart';
 
-// Provider to fetch history
 final historyProvider = FutureProvider<List<HistoryItem>>((ref) async {
   final storage = ref.watch(storageServiceProvider);
   return storage.getHistory();
