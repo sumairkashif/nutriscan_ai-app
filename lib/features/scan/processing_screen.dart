@@ -114,8 +114,6 @@ class _ProcessingScreenState extends ConsumerState<ProcessingScreen> with Single
       body: Column(
         children: [
           const Spacer(),
-          
-          // Main Scanning Circle
           Stack(
             alignment: Alignment.center,
             children: [

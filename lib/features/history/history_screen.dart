@@ -29,7 +29,7 @@ class HistoryScreen extends ConsumerWidget {
         data: (history) {
           if (history.isEmpty) {
             return const Center(
-              child: Text("No history yet. Scan a meal!"),
+              child: Text("No history yet. Please Scan a meal!"),
             );
           }
           return AnimationLimiter(
