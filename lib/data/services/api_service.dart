@@ -6,8 +6,6 @@ final apiServiceProvider = Provider<ApiService>((ref) => ApiService());
 
 class ApiService {
   final Dio _dio = Dio();
-  // Placeholder URL - replace with actual n8n webhook URL
-  // final String _n8nWebhookUrl = 'https://your-n8n-instance.com/webhook/nutriscan';
   final String _n8nWebhookUrl = 'https://primary-production-9b20.up.railway.app/webhook-test/upload-meal';
 
   Future<NutritionData> analyzeImage(String imagePath) async {
@@ -31,7 +29,7 @@ class ApiService {
       if (response.statusCode == 200) {
         return NutritionData.fromJson(response.data);
       } else {
-        throw Exception('Failed to analyze image');
+        throw Exception('Failed to analyze the image');
       }
     } catch (e) {
       throw Exception('Error analyzing image: $e');

@@ -7,6 +7,7 @@ import '../../data/models/nutrition_data.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  // Placeholder data for recommended foods
   @override
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> recommendedFoods = [

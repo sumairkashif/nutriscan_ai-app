@@ -20,7 +20,7 @@ class StorageService {
   Future<void> saveHistoryItem(HistoryItem item) async {
     final prefs = await SharedPreferences.getInstance();
     final List<HistoryItem> currentHistory = await getHistory();
-    currentHistory.insert(0, item); // Add new item to the top
+    currentHistory.insert(0, item);
 
     final String encoded = jsonEncode(currentHistory.map((e) => e.toJson()).toList());
     await prefs.setString(_historyKey, encoded);
