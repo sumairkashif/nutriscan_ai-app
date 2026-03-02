@@ -19,7 +19,6 @@ class ResultScreen extends ConsumerWidget {
       backgroundColor: Colors.black, // Dark background for the image
       body: Stack(
         children: [
-          // Background Image
           Positioned.fill(
             child: imagePath != null
                 ? Image.file(
